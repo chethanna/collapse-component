@@ -1,0 +1,65 @@
+:root {
+	font-size : 16px;
+}
+
+body {
+	margin : 0;
+}
+
+.container {
+	display : flex;
+	flex-direction : column;
+}
+
+.heading {
+	width :100vw;
+	height : 5vmax;
+	padding-left : 3vw;
+	font-size : 1.10rem;
+	text-align : left;
+	border-radius : 0.5vmax;
+}
+
+.hidden {
+	display: none;
+}
+
+.content {
+	padding : 2vmax;
+	font-size : 1rem;
+	border-style : groove;
+	border-width : 0.25vmax;
+	border-color : #f2f2f2;
+	border-radius : 0 0 0.5vmax 0.5vmax;
+}
+
+.not-highlight {
+	background-color : #f2f2f2;
+	color : #3399ff;
+}
+
+.highlighted {
+	background-color :  #3399ff;
+	color : #ffffff; 
+}
+
+.active {
+	background-color :  #3399ff;
+	color : #ffffff; 
+	border-radius : 0.5vmax 0.5vmax 0 0;
+}
+
+button:focus {
+	outline : 0;
+}
+
+@media screen and (max-width: 700px) {
+	.heading {
+		font-size : 1rem;
+		height : 7vmax;
+	}
+	
+	.content {
+		font-size : 0.8rem;
+	}
+}
